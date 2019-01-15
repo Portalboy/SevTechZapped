@@ -1,0 +1,15 @@
+setTitle("Pedestalling for Time")
+
+setIcon("minecraft:gravel")
+
+setDescription("Pedistill not gonna happen. Instead, GRAVEL!!!!!!!!!")
+
+setParent("triumph:stage1/statue")
+setRequiresParent(true)
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("minecraft:gravel")
+
+//Rewards
+setRewardExperience(4)

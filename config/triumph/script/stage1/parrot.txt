@@ -1,0 +1,15 @@
+setTitle("I Can't Find a Jungle?!")
+
+setIcon("minecraft:feather")
+
+setDescription("Go find a Jungle and tame a Parrot using seeds.")
+
+setParent("triumph:stage1/statue")
+setRequiresParent(true)
+
+//Criteria
+criteria = addCriteria("tamed_horse", "minecraft:tame_animal")
+criteria.setEntityType("minecraft:parrot")
+
+//Rewards
+setRewardExperience(8)

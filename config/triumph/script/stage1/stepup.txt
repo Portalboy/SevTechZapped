@@ -1,0 +1,16 @@
+setTitle("I Don't Want it Anymore! - Zapped")
+
+setIcon("minecraft:gravel")
+
+setDescription("Boom, gravel.")
+
+setParent("triumph:stage1/bloodaltar")
+setRequiresParent(true)
+
+//Criteria
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("minecraft:gravel")
+
+//Rewards
+setRewardExperience(1)

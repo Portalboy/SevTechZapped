@@ -1,0 +1,24 @@
+setTitle("Something to Write On - Zapped")
+
+setIcon("minecraft:gravel", 5)
+
+setDescription("You can just write on gravel, right? Yeah.")
+
+setParent("triumph:stage1/aquamarine")
+setRequiresParent(true)
+
+setFrameType("Goal")
+
+setRequirements("any")
+
+setUncompletedIconColor(8947848)
+setCompletedIconColor(6570404)
+setUncompletedTitleColor(8947848)
+setCompletedTitleColor(6570404)
+
+//Criteria
+criteria1 = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria1.setItem("minecraft:gravel", 5)
+
+//Rewards
+setRewardExperience(4)

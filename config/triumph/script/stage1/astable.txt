@@ -1,0 +1,23 @@
+setTitle("Link to the Stars - Zapped")
+
+setIcon("minecraft:gravel")
+
+setDescription("No stars. Just gravel. GRAVEL!!!!!!")
+
+setParent("triumph:stage1/journal")
+setRequiresParent(true)
+
+setFrameType("challenge")
+
+setUncompletedIconColor(8947848)
+setCompletedIconColor(6570404)
+setUncompletedTitleColor(8947848)
+setCompletedTitleColor(6570404)
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("minecraft:gravel")
+
+//Rewards
+setRewardExperience(8)
+setRewardFunction("triumph:stage-2_trigger")

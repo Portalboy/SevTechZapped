@@ -1,0 +1,22 @@
+setTitle("Shake, Rattle, and Roll - Zapped")
+
+setIcon("minecraft:gravel")
+
+setDescription("This pagan progression criteria has been wiped out. Now you just need a block of gravel. Gravel.")
+
+setParent("triumph:stage0/leather")
+setRequiresParent(true)
+
+//Criteria
+criteria1 = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria1.setItem("minecraft:gravel")
+
+criteria2 = addCriteria("hasRock2", "minecraft:inventory_changed")
+criteria2.setItem("minecraft:gravel")
+
+criteria3 = addCriteria("hasRock3", "minecraft:inventory_changed")
+criteria3.setItem("minecraft:gravel")
+
+//Rewards
+setRewardItem("minecraft:gravel", 0, 1)
+setRewardExperience(4)

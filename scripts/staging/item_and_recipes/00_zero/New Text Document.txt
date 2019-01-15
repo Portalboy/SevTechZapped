@@ -1,0 +1,17 @@
+import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
+
+var shapelessRecipes as IIngredient[][][IItemStack] = {
+	<actuallyadditions:item_booklet> : [
+		[<actuallyadditions:item_coffee_seed>, <primal:plant_cloth>]
+	]
+};
+
+
+
+
+for item, recipesForItem in shapelessRecipes {
+	for recipe in recipesForItem {
+		mods.recipestages.Recipes.addShapeless(STAGE, item, recipe);
+	}
+}

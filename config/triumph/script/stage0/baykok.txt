@@ -1,0 +1,19 @@
+setTitle("Spooky Boss Battle - Zapped")
+
+setIcon("minecraft:gravel")
+
+setDescription("Instead of fighting weird ancient animals, grab a block of Gravel. GRAVEL!!!")
+
+setParent("triumph:stage0/buffalo")
+setRequiresParent(true)
+
+setRequirements("any")
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("minecraft:gravel")
+
+//Rewards
+setRewardExperience(16)
+setRewardFunction("triumph:prestige_add_100")
+setRewardFunction("triumph:baykok_trigger")

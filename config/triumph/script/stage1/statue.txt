@@ -1,0 +1,24 @@
+setTitle("Abyssal Trophy Case - Zapped")
+
+setIcon("minecraft:gravel", 4)
+
+setDescription("Abyssal no. Gravel!")
+
+setParent("triumph:stage1/necro")
+setRequiresParent(true)
+
+setFrameType("Goal")
+
+setRequirements("any")
+
+setUncompletedIconColor(8947848)
+setCompletedIconColor(6570404)
+setUncompletedTitleColor(8947848)
+setCompletedTitleColor(6570404)
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("minecraft:gravel")
+
+//Rewards
+setRewardExperience(4)

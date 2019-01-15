@@ -1,0 +1,22 @@
+setTitle("Abyssalcrafted - Zapped")
+
+setIcon("minecraft:gravel")
+
+setDescription("Or naw.")
+
+setParent("triumph:stage1/bronze")
+setRequiresParent(true)
+
+setFrameType("Goal")
+
+setUncompletedIconColor(8947848)
+setCompletedIconColor(6570404)
+setUncompletedTitleColor(8947848)
+setCompletedTitleColor(6570404)
+
+//Criteria
+criteria = addCriteria("crafted", "minecraft:inventory_changed")
+criteria.setItem("minecraft:gravel")
+
+//Rewards
+setRewardExperience(4)

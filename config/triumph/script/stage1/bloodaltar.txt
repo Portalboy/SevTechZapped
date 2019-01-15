@@ -1,0 +1,16 @@
+setTitle("Altered State - Zapped")
+
+setIcon("minecraft:gravel")
+
+setDescription("Instead of this pagan progression point, you get to find a block of gravel. You probably keep one just for this by now. GRAVEL!!!")
+
+setParent("triumph:stage1/alloykiln")
+setRequiresParent(true)
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("minecraft:gravel")
+
+//Rewards
+setRewardExperience(8)
+setRewardItem("minecraft:gravel", 0, 1)
